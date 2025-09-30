@@ -14,7 +14,7 @@ void main()
 		while (!std::cin) {
 			std::cout << "Error, no has introduzido un numero, prueba de nuevo." << std::endl;
 			std::cin.clear(); //Limpiar el estado de error.
-			std::cin.ignore(1000, '\n'); //Descartar la entrada incorrecta
+			std::cin.ignore(1000, '\n'); //Descartar la entrada incorrecta hasta n caracteres o hasta encontrar un salto de línea.
 			std::cin >> num;
 		}
 
